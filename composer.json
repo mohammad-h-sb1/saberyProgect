@@ -1,0 +1,19 @@
+{
+    "name": "sabery/package",
+    "description": "this is for my",
+    "autoload": {
+        "psr-4": {
+            "Sabery\\Package\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "mohammadhsb",
+            "email": "mohammad.h.sb44@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^8.0.10"
+
+    }
+}
