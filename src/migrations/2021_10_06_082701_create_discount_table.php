@@ -16,7 +16,7 @@ class CreateDiscountTable extends Migration
         Schema::create('discounts', function (Blueprint $table) {
             $table->id();
             $table->string('code')->unique();
-            $table->enum('discount_type',\Payment\Sb\models\Discount::TYPE_DISCOUNT);
+            $table->enum('discount_type',\Sabery\Package\models\Discount::TYPE_DISCOUNT);
             $table->integer('amount');
             $table->integer('max_amount')->nullable();
             $table->boolean('status')->default(1);
