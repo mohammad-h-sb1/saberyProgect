@@ -21,7 +21,7 @@ class CreateOrdersTable extends Migration
             $table->integer('amount')->nullable();
             $table->integer('discount_amount')->nullable();
             $table->integer('total_amount')->nullable();
-            $table->enum('status',\Payment\Sb\models\Order::TYPE_ORDER)->default(\Payment\Sb\models\Order::TYPE_UNPAID);
+            $table->enum('status',\Sabery\Package\models\Order::TYPE_ORDER)->default(\Sabery\Package\models\Order::TYPE_ORDER);
             $table->timestamps();
         });
     }
